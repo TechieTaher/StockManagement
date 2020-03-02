@@ -1,0 +1,77 @@
+<table border="1px solid black">
+    <div class="row">
+        <tr>
+            <td class="col-lg-1">
+                <div>
+                    PRODUCT ID
+                </div>
+            </td>
+            <td class="col-lg-1">
+                <div class="col-1">
+                    PRODUCT NAME
+                </div>
+            </td>
+            <td class="col-lg-1">
+                <div class="col-1">
+                    PRODUCT PRICE
+                </div>
+            </td>
+            <td class="col-lg-1">
+                <div class="col-1">
+                    PRODUCT QUANTITY
+                </div>
+            </td>
+            <td class="col-lg-1">
+                <div class="col-1">
+                    PRODUCT DESCRIPTION
+                </div>
+            </td>
+            <td class="col-lg-1">
+                <div class="col-1">
+                    PRODUCT SUPPLIER NAME
+                </div>
+            </td>
+
+        </tr>
+    </div>
+    <div *ngFor="let product of products" class="row">
+        <tr>
+
+            <td class="col-lg-1">
+                <div>
+                    {{product.pId}}
+                </div>
+            </td>
+            <td class="col-lg-1">
+                <div>
+                    {{product.pName}}
+                </div>
+            </td>
+            <td class="col-lg-1">
+                <div>
+                    {{product.pPrice}}
+                </div>
+            </td>
+            <td class="col-lg-1">
+                <div>
+                    {{product.pQuantity}}
+                </div>
+            </td>
+            <td class="col-lg-1">
+                <div>
+                    {{product.pDesc}}
+                </div>
+            </td>
+            <td class="col-lg-1">
+                <div>
+                    {{product.pSupplier}}
+                </div>
+            </td>
+
+            <td class="col-lg-1">
+                <a href="#" [routerLink]="['edit/',product.pId]">Edit</a>
+            </td>
+
+        </tr>
+    </div>
+</table>

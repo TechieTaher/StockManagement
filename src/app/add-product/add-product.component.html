@@ -1,0 +1,41 @@
+<form [formGroup]="addProduct">
+    <nav class="navbar navbar-light bg-light">
+        <h1 style="text-align: center;"><a class="navbar-brand">STOCK MANAGEMENT SYSTEM</a></h1>
+    </nav>
+
+    <!-- As a heading -->
+    <nav class="navbar navbar-light bg-light">
+        <h3><span class="navbar-brand mb-0 h1">ADD PRODUCTS </span></h3>
+    </nav>
+
+    <div class="form-group">
+        <label for="PName">Product ID</label>
+        <input type="text" class="form-control" id="PId" formControlName="pId">
+    </div>
+    <div class="form-group">
+        <label for="PName">Product Name</label>
+        <input type="text" class="form-control" id="PName" formControlName="pName">
+    </div>
+    <div class="form-group">
+        <label for="PPrice"> Product's Price</label>
+        <input type="text" class="form-control" id="PPrice" formControlName="pPrice">
+    </div>
+    <div class="form-group">
+        <label for="PQuantity"> Product's Quantity</label>
+        <input type="text" class="form-control" id="PQuantity" formControlName="pQuantity">
+    </div>
+    <div class="form-group">
+        <label for="PDescription"> Product's Description</label>
+        <input type="text" class="form-control" id="PDescription" formControlName="pDesc">
+    </div>
+    <div class="form-group">
+        <label for="PDescription"> Product's Supplier Name</label>
+        <input type="text" class="form-control" id="PSupplier" formControlName="pSupplier">
+    </div>
+    <div class="form-group">
+        <label for="PDescription"> Address</label>
+        <input type="text" class="form-control" id="pAddress" formControlName="pAddress">
+    </div>
+
+    <button type="submit" (click)="addproduct()" class="btn btn-primary">Add Product</button>
+</form>
